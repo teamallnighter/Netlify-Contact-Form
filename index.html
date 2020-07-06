@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Roaming Bug</title>
-	<!-- for icon/logo -->
+	<title>Contact Me - Chris Connelly</title>
 	<link rel="shortcut icon" href="favicon.png" >
-	<!-- for enabling reposiveness on mobile and desktop clients -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fd3e7d">
+    <meta name="msapplication-TileColor" content="#fd3e7d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/style.css">
 	<!-- for external style.css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- for bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<!-- for fonts used on this page -->
 	<link href="https://fonts.googleapis.com/css?family=Montez|Permanent+Marker" rel="stylesheet">
-	<!-- for social-media icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container">
-    			<div>
-  					<h2>Contact Us</h2><hr>
-  					<form name="contact" method="POST" action="/thankyou.html" data-netlify="true">
-    					<div class="form-group"
-      						<label for="name">Name:*</label>
-      						<input type="text" class="form-control" id="name" placeholder="Enter name">
-    					</div>
-    					<div class="form-group">
-      						<label for="email">Email:*</label>
-      						<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
-      						<!-- <label>Your Email: <input type="email" name="email" /></label> -->
-    					</div>
-    					<div class="form-group">
-    						<label>Message:*<br> <textarea placeholder="your message" class="form-control" name="message" cols="30"></textarea></label>
-    					</div>
-    					<div>
-    						<button type="submit">Send</button>
-    					</div>
-  					</form>
+  		<h2>Contact Us</h2><hr>
+  			<form name="contact" method="POST" action="/thankyou.html" data-netlify="true">
+				<div class="form-group">
+					<label for="name">Name:*</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter name">
 				</div>
- 	</div>
-	
+				<div class="form-group">
+					<label for="email">Email:*</label>
+					<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+					<!-- <label>Your Email: <input type="email" name="email" /></label> -->
+				</div>
+				<div class="form-group">
+					<label>Message:*<br> <textarea placeholder="your message" class="form-control" name="message" cols="30"></textarea></label>
+				</div>
+				<div>
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

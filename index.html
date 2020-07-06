@@ -14,32 +14,31 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="container">  
-<form name="contact" action="/thank-you" netlify netlify-honeypot="bot-field" id="contact">  
+  <div class="container">  
+    <form name="contact" action="/thank-you" netlify>  
     <h3>Get A Proposal</h3>
     <h4>Get a proposal today</h4>
-    <fieldset>
-      <label for="name">Name</label>
-      <input type="text" id="name" class="form-control" placeholder="Chris Connelly" required>
-    </fieldset>
-    <fieldset>
-      <label for="email">Phone</label>
-      <input type="phone" id="phone" class="form-control" placeholder="(403) 477-3548">
-    </fieldset>
-    <fieldset>
-      <label for="email">Email</label>
-      <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev" required>
-    </fieldset>
-    <fieldset>
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Chris Connelly" required>
+      </fieldset>
+      <fieldset>
+        <label for="email">Phone</label>
+        <input type="phone" id="phone" class="form-control" placeholder="(403) 477-3548">
+      </fieldset>
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev" required>
+      </fieldset>
+      <fieldset>
         <label for="company">Company Name</label>
         <input type="text" id="companyName" class="form-control" placeholder="Awesome Corp" required>
-    </fieldset>
-    <fieldset>
+      </fieldset>
+      <fieldset>
         <label for="name">Website</label>
         <input type="url" id="website" class="form-control" placeholder="example.com">
-    </fieldset>
-    <fieldset>
+      </fieldset>
+      <fieldset>
         <label for="project">Project Type</label>
         <select name="project" id="projectType" class="form-control">
           <option value="" disabled selected>Select your option</option>
@@ -50,23 +49,20 @@
           <option value="Search Engine Optimization">Search Engine Optimization</option>
           <option value="Other">Other</option>
         </select>    
-    </fieldset>
-    <fieldset>
-      <label for="description">Project Description</label>
-      <textarea id="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
-    </fieldset>
-    <fieldset>
-      <label for="upload">Upload</label>
-      <p id="upload1">Please include any files you think may be helpful</p>
-      <p id="upload2">IE: Logo, Color schemes and docs</p>
-      <input type="file" id="myfile" name="myfile" >
-    </fieldset>
-       <button type="submit" class="button-neutral id="submit"">Send</button>
-  </form>
- 
-  
-</div>
-<!-- partial -->
+      </fieldset>
+      <fieldset>
+        <label for="description">Project Description</label>
+        <textarea id="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="upload">Upload</label>
+        <p id="upload1">Please include any files you think may be helpful</p>
+        <p id="upload2">IE: Logo, Color schemes and docs</p>
+        <input type="file" id="myfile" name="myfile" >
+      </fieldset>
+      <button type="submit" class="button-neutral id="submit"">Send</button>
+    </form>
+  </div>
   <script src="submit.js"></script>
 </body>
 </html>

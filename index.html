@@ -1,68 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Me - Chris Connelly</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fd3e7d">
-  <meta name="msapplication-TileColor" content="#fd3e7d">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="/style.css">
-
+	<title>Roaming Bug</title>
+	<!-- for icon/logo -->
+	<link rel="shortcut icon" href="favicon.png" >
+	<!-- for enabling reposiveness on mobile and desktop clients -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- for external style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- for bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- for fonts used on this page -->
+	<link href="https://fonts.googleapis.com/css?family=Montez|Permanent+Marker" rel="stylesheet">
+	<!-- for social-media icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="container">  
-    <form name="contact" action="/thank-you" netlify>  
-    <h3>Get A Proposal</h3>
-    <h4>Get a proposal today</h4>
-      <fieldset>
-        <label for="name">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Chris Connelly" required>
-      </fieldset>
-      <fieldset>
-        <label for="email">Phone</label>
-        <input type="phone" id="phone" class="form-control" placeholder="(403) 477-3548">
-      </fieldset>
-      <fieldset>
-        <label for="email">Email</label>
-        <input type="email" id="email" class="form-control" placeholder="me@chrisconnelly.dev" required>
-      </fieldset>
-      <fieldset>
-        <label for="company">Company Name</label>
-        <input type="text" id="companyName" class="form-control" placeholder="Awesome Corp" required>
-      </fieldset>
-      <fieldset>
-        <label for="name">Website</label>
-        <input type="url" id="website" class="form-control" placeholder="example.com">
-      </fieldset>
-      <fieldset>
-        <label for="project">Project Type</label>
-        <select name="project" id="projectType" class="form-control">
-          <option value="" disabled selected>Select your option</option>
-          <option value="New Website Design/Development">New Website Design/Development</option>
-          <option value="Existing Website Design/Development">Existing Website Design/Development</option>
-          <option value="Existing Website Design/Development">Services / Internal App</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Search Engine Optimization">Search Engine Optimization</option>
-          <option value="Other">Other</option>
-        </select>    
-      </fieldset>
-      <fieldset>
-        <label for="description">Project Description</label>
-        <textarea id="description" cols="100" rows="10" class="form-control" maxlength="10000" required></textarea>
-      </fieldset>
-      <fieldset>
-        <label for="upload">Upload</label>
-        <p id="upload1">Please include any files you think may be helpful</p>
-        <p id="upload2">IE: Logo, Color schemes and docs</p>
-        <input type="file" id="myfile" name="myfile" >
-      </fieldset>
-      <button type="submit" class="button-neutral id="submit"">Send</button>
-    </form>
-  </div>
-  <script src="submit.js"></script>
+	<div class="container">
+    			<div>
+  					<h2>Contact Us</h2><hr>
+  					<form style="margin-bottom: 10px;" name="contact" method="POST" data-netlify="true">
+    					<div class="form-group">
+      						<label for="name">Name:*</label>
+      						<input type="name" class="form-control" id="name" placeholder="Enter name">
+    					</div>
+    					<div class="form-group">
+      						<label for="email">Email:*</label>
+      						<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+      						<!-- <label>Your Email: <input type="email" name="email" /></label> -->
+    					</div>
+    					<div class="form-group">
+    						<label>Message:*<br> <textarea placeholder="your message" class="form-control" name="message"></textarea></label>
+    					</div>
+    					<div>
+    						<button type="submit">Send</button>
+    					</div>
+  					</form>
+				</div>
+ 	</div>
+	
+	<div style="color: #FBCA09;background-color: black;" class="clm" style="" align="center">
+		<a href="https://www.facebook.com/akash.prashar"><i style="color: #FBCA09;padding: 10px;" class="fa fa-facebook" style="font-size:30px"></i></a>
+		<a href="https://www.github.com/akashprasher"><i style="color: #FBCA09;padding: 10px;" class="fa fa-github" style="font-size:30px"></i></i></a><br>
+		<p>© Roaming Bug 2019</p>
+	</div>
 </body>
 </html>
